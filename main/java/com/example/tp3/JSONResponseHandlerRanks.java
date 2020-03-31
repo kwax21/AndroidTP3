@@ -61,9 +61,9 @@ public class JSONResponseHandlerRanks {
             while (reader.hasNext()) {
                 String name = reader.nextName();
                 if (nb==0) {
-                    if (name.equals("teamid")) {
+                    if (name.equals("")) {
                         team.setRanking(reader.nextInt());
-                    } else if (name.equals("total")) {
+                    } else if (name.equals("")) {
                         team.setTotalPoints(reader.nextInt());
                     } else {
                         reader.skipValue();
