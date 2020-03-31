@@ -61,7 +61,7 @@ public class TeamActivity extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    private void updateView() {
+    protected void updateView() {
 
         textTeamName.setText(team.getName());
         textLeague.setText(team.getLeague());
